@@ -29,4 +29,4 @@ Transactions.propTypes = {
         id: propTypes.string.isRequired,
     })
   ).isRequired,
-}
+} 
