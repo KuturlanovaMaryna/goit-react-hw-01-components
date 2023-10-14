@@ -1,12 +1,12 @@
 .statistics{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
    
-    margin-top: 40px;
-    margin-bottom: 40px;
+   
+    margin-bottom: 80px;
     padding: 40px 40px;
 
     background-color: rgb(202, 202, 202);

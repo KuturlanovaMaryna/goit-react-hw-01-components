@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import css from './StatisticItem.module.css'
-import { getRandomColor } from './Rendomcolor';
+import { getRandomColor } from './RendomColor';
 
 
 export const StatisticItem = ({ dataItem: { label, percentage } }) => {
