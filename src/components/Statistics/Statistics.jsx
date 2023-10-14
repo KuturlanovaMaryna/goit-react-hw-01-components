@@ -1,7 +1,7 @@
 import { StatisticItem } from './StatisticItem';
 import propTypes from 'prop-types';
 import css from './Statistics.module.css'
-import { getRandomColor } from './Rendomcolor';
+
 
 export const Statistics = ({ title, stats }) => {
     return (
@@ -10,7 +10,7 @@ export const Statistics = ({ title, stats }) => {
             
          <ul className={css.statsList}>
         {stats.map(item => (
-          <StatisticItem style={{ backgroundColor :  getRandomColor () }} key={item.id} dataItem={item} />
+          <StatisticItem  key={item.id} dataItem={item} />
         ))}
       </ul>
     </section>);

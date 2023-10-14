@@ -1,12 +1,13 @@
 import propTypes from 'prop-types';
 import css from './StatisticItem.module.css'
+import { getRandomColor } from './Rendomcolor';
 
 
 export const StatisticItem = ({ dataItem: { label, percentage } }) => {
      
     return (
         
-    <li  className={css.item}>
+    <li style={{ backgroundColor :  getRandomColor () }} className={css.item}>
       <span className={css.label}>{label}</span>
       <span className={css.percentage}>{percentage}%</span>
     </li>
