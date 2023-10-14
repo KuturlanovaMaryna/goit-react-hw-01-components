@@ -7,13 +7,15 @@ import data from "./data.json";
 import { FriendsList } from "./FriendsList/FriendsList";
 import friends from "./friends.json";
 
+import { Transactions } from "./Transactions/Transactions"
+import transactions from "./transactions.json";
+
 
 
 export const App = () => {
   return (
     <div>
       <Profile
-        
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -21,7 +23,7 @@ export const App = () => {
         stats={user.stats} />
       <Statistics title="Upload stats" stats={data} />
       <FriendsList friends={friends} />;
-     
+      <Transactions transactions={transactions} />;
     </div>
   );
 };
