@@ -1,7 +1,7 @@
 import propTypes from 'prop-types';
 import css from './FriendItem.module.css'
 
-export const FriendItem = ({ Friend: { avatar, name, isOnline } }) => {
+export const FriendItem = ({ friend: { avatar, name, isOnline } }) => {
      
     return (
         
@@ -15,7 +15,7 @@ export const FriendItem = ({ Friend: { avatar, name, isOnline } }) => {
 }
 
 FriendItem.propTypes = {
-    Friend: propTypes.shape({
+    friend: propTypes.shape({
         avatar: propTypes.string.isRequired,
         name: propTypes.string.isRequired,
         isOnline: propTypes.bool.isRequired,
